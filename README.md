@@ -1,4 +1,4 @@
-# **LineBot-GoogleAppsScript**
+# **LineBot-ReplyMessages-GoogleAppsScript**
 使用 GoogleAppsScript 建立下列 LineBot Reply Messages API 並將訊息寫入 Google Sheets。
 
 ## **前置作業**
