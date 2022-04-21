@@ -2,7 +2,7 @@
 使用 GoogleAppsScript 建立下列 LineBot Reply Messages API 並將訊息寫入 Google Sheets。
 
 ## **前置作業**
-至Line developers建立Channel並取得Channel secret及Channel access token。
+至 [Line developers](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fconsole%2F)建立Channel並取得Channel secret及Channel access token。
 
 ## **發布流程**
 。
