@@ -90,8 +90,8 @@
 
  - Line Reply API 的 URL 為 `https://api.line.me/v2/bot/message/reply`。
  - 利用 UrlFetchApp 方法發 POST 請求。
- - Authorization 授權方式為 OAuth 2.0，寫法為 ` Bearer + *token* `，這裡的token是Line後台給的token。
- - payload 回傳的訊息內容，需要帶下列兩個參數：
+ - Authorization 授權方式為 OAuth 2.0，寫法為 ` Bearer + token `，這裡的token是Line後台給的token。
+ - payload，回傳的訊息內容，需要帶下列兩個參數：
    - `replyToken` ：RequestBody中的replyToken。
    - `messages` ：訊息內容。
 
