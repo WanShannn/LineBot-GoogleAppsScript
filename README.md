@@ -2,10 +2,11 @@
 使用 GoogleAppsScript 建立下列 LineBot Reply Messages API 並將訊息寫入 Google Sheets。
 
 ## **前置作業**
-至 [Line developers](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fconsole%2F)建立Channel並取得Channel secret及Channel access token。
+至 [Line developers](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fconsole%2F)建立Channel並取得 **Channel secret** 及 **Channel access token** 。
 
 ## **發布流程**
-。
+1. GoogleAppsScript撰寫完成後，點選部屬。
+2. 部屬後會有一組「Current web app URL」將這組URL放置LINE後台的「Webhook URL」當中。
    
 ## **RequestBody結構**
 當用戶發訊息至LineBot後，後端收到的RequestBody結構為：
