@@ -93,7 +93,7 @@
  - Authorization 授權方式為 OAuth 2.0，寫法為 ` Bearer + token `，這裡的token是Line後台給的token。
  - payload，回傳的訊息內容，需要帶下列兩個參數：
    - `replyToken` ：RequestBody中的replyToken。
-   - `messages` ：訊息內容。
+   - `messages` ：訊息內容，訊息格式請至官方[Message objects](https://developers.line.biz/en/reference/messaging-api/#text-message)查詢。
 
 ## **References**
 * https://www.learncodewithmike.com/2020/06/python-line-bot.html
