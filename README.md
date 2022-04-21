@@ -4,9 +4,21 @@
 ## **前置作業**
 至 [Line developers](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fconsole%2F)建立Channel並取得 **Channel secret** 及 **Channel access token** 。
 
-## **發布流程**
-1. GoogleAppsScript撰寫完成後，點選部屬。
-2. 部屬後會有一組「Current web app URL」將這組URL放置LINE後台的「Webhook URL」當中。
+## **部屬流程**
+下列步驟為GoogleAppsScript撰寫完成後，如何部屬上線。
+
+> 1. 點選部屬，並選擇「 **新增部屬作業**」，類型選擇「 **網頁應用程式**」。</br>
+>       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_1.jpg)</br>
+> 2. 存取權限選擇「**所有人**」，點選「**部屬**」。</br>
+>       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_2.jpg)</br>
+> 3. 部屬時須受予權限，就一律按允許。</br>
+>       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_3.jpg)</br>
+> 4. 建立完成後會出現一組「**網頁應用程式的網址**」。</br>
+>       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_4.jpg)</br>
+> 5. 將「**網頁應用程式的網址**」貼到LINE 後台的「**Webhook URL**」中。</br>
+>       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_5.jpg)</br>
+> 6. 於LINE 後台的 「**回應設定**」的「**進階設定**」設定中，將「**Webhook**」設為「**啟用**」。</br>
+>       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_6.jpg)</br>
 
 ## **寫入Google Sheet方法**
 要讀取或寫入 Google Sheet，都要透過 SpreadsheetApp 所包含的屬性或方法來實現。
