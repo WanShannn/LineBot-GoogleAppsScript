@@ -7,9 +7,10 @@ function doPost(e) {
 
     try {
 
-      va r replyToken = msg.events[0].replyToken;
+      var replyToken = msg.events[0].replyToken;
       var userMessage = msg.events[0].message.text;
       var userid = msg.events[0].source.userId;
+	    
       var returnmessage = null;
 
       if (typeof replyToken === 'undefined') {
