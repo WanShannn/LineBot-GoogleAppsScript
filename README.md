@@ -31,13 +31,13 @@
   Sheet.appendRow([creatTime, userMessage, userid]);
 ```
 
-> - **openById**
->      - 透過文件的 id 來打開文件。  
->      - 假設Sheet的網址為 `https://docs.google.com/spreadsheets/d/123456789/edit#gid=0` ，id 則是 __***123456789***__。
-> - **getSheetByName**
->      - Sheet中的工作表名稱。
-> - **appendRow**
->      - 在指定的工作表中新增一列資料。
+ - **openById**
+      - 透過文件的 id 來打開文件。  
+      - 假設Sheet的網址為 `https://docs.google.com/spreadsheets/d/123456789/edit#gid=0` ，id 則是 __***123456789***__。
+ - **getSheetByName**
+      - Sheet中的工作表名稱。
+ - **appendRow**
+      - 在指定的工作表中新增一列資料。
    
 ## **RequestBody結構**
 當用戶發訊息至LineBot後，後端收到的RequestBody結構為：
@@ -66,10 +66,34 @@
 ```
 
 * events
-  > type `LineBot收到訊息的型態`  
-  > message `訊息類型(Text、Sticker、Image、Video、Location)及內容`   
-  > source `發送訊息的用戶類型(userId、groupId、roomId)及ID`   
-  > replyToken `LineBot要Response訊息時用的token`
+  - type `LineBot收到訊息的型態`  
+  - message `訊息類型(Text、Sticker、Image、Video、Location)及內容`   
+  - source `發送訊息的用戶類型(userId、groupId、roomId)及ID`   
+  - replyToken `LineBot要Response訊息時用的token`
+
+## **回送訊息方法**
+分析LineBot回送訊息給用戶的方法。
+
+```javascript
+  UrlFetchApp.fetch(url, {
+    'method': 'post',
+    'headers': {
+      'Content-Type': 'application/json; charset=UTF-8',
+      'Authorization': 'Bearer ' + token,
+    },
+    'payload': JSON.stringify({
+      'replyToken': replyToken,
+      'messages': returnmessage,
+    }),
+  });
+```
+
+ - Line Reply API 的 URL 為 `https://api.line.me/v2/bot/message/reply`。
+ - 利用 UrlFetchApp 方法發 POST 請求。
+ - Authorization 授權方式為 OAuth 2.0，寫法為 ` Bearer + *token* `，這裡的token是Line後台給的token。
+ - payload 回傳的訊息內容，需要帶下列兩個參數：
+   - `replyToken` ：RequestBody中的replyToken。
+   - `messages` ：訊息內容。
 
 ## **References**
 * https://www.learncodewithmike.com/2020/06/python-line-bot.html
