@@ -15,9 +15,9 @@
 >       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_3.jpg)</br>
 > 4. 建立完成後會出現一組「**網頁應用程式的網址**」。</br>
 >       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_4.jpg)</br>
-> 5. 將「**網頁應用程式的網址**」貼到LINE 後台的「**Webhook URL**」中。</br>
+> 5. 將「**網頁應用程式的網址**」貼到LINE 後台的「**Webhook URL**」中，並將下方的「**Use webhook**」設為「**啟用**」。</br>
 >       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_5.jpg)</br>
-> 6. 於LINE 後台的 「**回應設定**」的「**進階設定**」設定中，將「**Webhook**」設為「**啟用**」。</br>
+> 6. 於LINE 後台的 「**回應設定**」的「**進階設定**」設定中，查詢「**Webhook**」是否設為「**啟用**」。</br>
 >       ![image](https://github.com/WanShannn/LineBot-GoogleAppsScript/blob/main/result/%E9%83%A8%E5%B1%AC%E4%BD%9C%E6%A5%AD_6.jpg)</br>
 
 ## **寫入Google Sheet方法**
